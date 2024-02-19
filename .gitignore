@@ -37,3 +37,6 @@ npm-debug.log
 .phpunit.result.cache
 yarn-error.log
 monica.db
+.pre-commit-hook.yaml
+.direnv
+.devenv
