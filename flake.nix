@@ -59,7 +59,7 @@
           languages = {
             php = {
               enable = true;
-              version = "8.3";
+              version = "8.2";
             };
             javascript = {
               enable = true;
