@@ -34,6 +34,21 @@ return [
     */
 
     'connections' => [
+        'crdb' => [
+            'driver' => 'crdb',
+            'url' => env('DATABASE_URL'),
+            'host' => env('DB_HOST', '127.0.0.1'),
+            'port' => env('DB_PORT', '26257'),
+            'database' => env('DB_DATABASE', 'monica'),
+            'username' => env('DB_USERNAME', 'monica'),
+            'password' => env('DB_PASSWORD', ''),
+            'charset' => 'utf8',
+            'prefix' => '',
+            'prefix_indexes' => true,
+            'schema' => 'public',
+            'sslmode' => 'prefer',
+            'cluster' => env('COCKROACHDB_CLUSTER', ''),
+        ],
 
         'sqlite' => [
             'driver' => 'sqlite',
