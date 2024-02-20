@@ -36,7 +36,7 @@
         # system.
 
         overlayAttrs = {
-          monica-5 = import ./default.nix {inherit pkgs; };
+          monica-5 = pkgs.callPackage ./default.nix {inherit pkgs; };
         };
 
         # Equivalent to  inputs'.nixpkgs.legacyPackages.hello;
