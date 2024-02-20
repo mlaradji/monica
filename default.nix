@@ -17,6 +17,7 @@ in
 yarnStage.overrideAttrs (oldAttrs: {
 name = "monica";
 installPhase = ''
+        ${pkgs.yarn}/bin/yarn build
         mkdir $out
         cp -R * $out/
         rm -rf $out/storage
