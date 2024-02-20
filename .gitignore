@@ -40,3 +40,4 @@ monica.db
 .pre-commit-hook.yaml
 .direnv
 .devenv
+result
