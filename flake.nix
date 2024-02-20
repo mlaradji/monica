@@ -18,6 +18,7 @@
   outputs = inputs @ {flake-parts, ...}:
     flake-parts.lib.mkFlake {inherit inputs;} {
       imports = [
+      inputs.flake-parts.flakeModules.easyOverlay
         inputs.devenv.flakeModule
       ];
       systems = ["x86_64-linux" "i686-linux" "x86_64-darwin" "aarch64-linux" "aarch64-darwin"];
@@ -33,6 +34,10 @@
         # Per-system attributes can be defined here. The self' and inputs'
         # module parameters provide easy access to attributes of the same
         # system.
+
+        overlayAttrs = {
+          monica-5 = import ./default.nix {inherit pkgs; };
+        };
 
         # Equivalent to  inputs'.nixpkgs.legacyPackages.hello;
         packages.default = pkgs.hello;
