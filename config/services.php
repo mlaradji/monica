@@ -73,7 +73,7 @@ return [
     'zitadel' => [
         'client_id' => env('ZITADEL_CLIENT_ID'),
         'client_secret' => env('ZITADEL_CLIENT_SECRET'),
-        'redirect' => env('ZITADEL_REDIRECT_URI'),
+        'redirect' => env('ZITADEL_REDIRECT_URI', '/auth/zitadel/callback'),
         'base_url' => env('ZITADEL_BASE_URL'),
         'logo' => env('ZITADEL_LOGO'),
     ],
