@@ -1072,6 +1072,15 @@ let
         };
       };
     };
+    "socialiteproviders/zitadel" = {
+      targetDir = "";
+      src = fetchgit {
+        name = "socialiteproviders-zitadel-c07d51f2e2bb8cc7a62d8ed2fff6bc556a67bb29";
+        url = "https://github.com/mlaradji/laravel-socialite-zitadel";
+        rev = "c07d51f2e2bb8cc7a62d8ed2fff6bc556a67bb29";
+        sha256 = "017bwvqw7ald921gabcrj9qpvm7ccaq732g2gppj515mjgw7wbh4";
+      };
+    };
     "spatie/data-transfer-object" = {
       targetDir = "";
       src = composerEnv.buildZipPackage {

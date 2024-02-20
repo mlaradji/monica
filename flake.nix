@@ -55,6 +55,7 @@
           packages = with pkgs; [
             config.packages.default
             yarn
+            nix-prefetch-git
           ];
 
           enterShell = ''
