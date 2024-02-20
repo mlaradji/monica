@@ -70,6 +70,14 @@ return [
         'redirect' => env('LINKEDIN_REDIRECT_URI', '/auth/linkedin/callback'),
     ],
 
+    'zitadel' => [
+        'client_id' => env('ZITADEL_CLIENT_ID'),
+        'client_secret' => env('ZITADEL_CLIENT_SECRET'),
+        'redirect' => env('ZITADEL_REDIRECT_URI'),
+        'base_url' => env('ZITADEL_BASE_URL'),
+        'logo' => env('ZITADEL_LOGO'),
+    ],
+
     'saml2' => [
         'name' => env('SAML2_NAME'),
         'metadata' => env('SAML2_METADATA'),

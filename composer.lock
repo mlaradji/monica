@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8697fab3bc8b6534190680571177625e",
+    "content-hash": "fcc0cfa29ff7cb3f05bf6e8ff190d798",
     "packages": [
         {
             "name": "asbiin/laravel-webauthn",
@@ -7572,6 +7572,50 @@
                 "source": "https://github.com/socialiteproviders/providers"
             },
             "time": "2022-03-15T21:17:43+00:00"
+        },
+        {
+            "name": "socialiteproviders/zitadel",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mlaradji/laravel-socialite-zitadel",
+                "reference": "c07d51f2e2bb8cc7a62d8ed2fff6bc556a67bb29"
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^8.0",
+                "socialiteproviders/manager": "^4.4"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SocialiteProviders\\Zitadel\\": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Oleg Kuchumov",
+                    "email": "voenniy@gmail.com"
+                }
+            ],
+            "description": "Keycloak OAuth2 Provider for Laravel Socialite",
+            "keywords": [
+                "keycloak",
+                "laravel",
+                "oauth",
+                "provider",
+                "socialite"
+            ],
+            "support": {
+                "issues": "https://github.com/mlaradji/laravel-socialite-zitadel",
+                "source": "https://github.com/mlaradji/laravel-socialite-zitadel",
+                "docs": "https://github.com/mlaradji/laravel-socialite-zitadel"
+            },
+            "time": "2024-02-20T22:09:44+00:00"
         },
         {
             "name": "spatie/data-transfer-object",

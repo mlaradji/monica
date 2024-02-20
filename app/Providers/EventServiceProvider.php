@@ -17,6 +17,7 @@ use SocialiteProviders\GitHub\GitHubExtendSocialite;
 use SocialiteProviders\Google\GoogleExtendSocialite;
 use SocialiteProviders\LinkedIn\LinkedInExtendSocialite;
 use SocialiteProviders\Manager\SocialiteWasCalled;
+use SocialiteProviders\Zitadel\ZitadelExtendSocialite;
 
 class EventServiceProvider extends ServiceProvider
 {
@@ -41,6 +42,7 @@ class EventServiceProvider extends ServiceProvider
             GitHubExtendSocialite::class,
             GoogleExtendSocialite::class,
             LinkedInExtendSocialite::class,
+            ZitadelExtendSocialite::class.'@handle',
         ],
         WebauthnRegister::class => [
             WebauthnRegistered::class,
